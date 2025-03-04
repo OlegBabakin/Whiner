@@ -1,0 +1,5 @@
+*.exe
+KR1_cond_added.c
+KR1_no_cond_added.c
+*.res
+KR1.c 
