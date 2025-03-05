@@ -24,8 +24,8 @@ int main(void)
 
 
 
-    FILE *f = fopen("data.dat", "r");
-    FILE *out = fopen("data.res", "w");
+    FILE *f = fopen("data.txt", "r");
+    FILE *out = fopen("output.txt", "w");
 
     if (!f || !out)
     {
@@ -139,5 +139,11 @@ int main(void)
             fprintf(out, "  ");
         }
     }
+    else
+    {
+        fprintf(out, "NO");
+    }
+    fclose(f);
+    fclose(out);
 
 }
